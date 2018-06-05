@@ -327,7 +327,7 @@ void setColorOrderRGBW() {
 	offsetRed = 0;
 	offsetGreen = 1;
 	offsetBlue = 2;
-    offsetBlue = 3;
+    offsetWhite = 4;
 }
 
 #if DEBUG
