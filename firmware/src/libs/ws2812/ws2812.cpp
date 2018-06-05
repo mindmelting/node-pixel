@@ -78,10 +78,10 @@ uint8_t set_rgb_at(uint16_t index, uint32_t px_value) {
         uint16_t tmp_pixel;
         tmp_pixel = index * color_depth;
 
-        px[OFFSET_R(tmp_pixel)] = (uint8_t)(px_value >> 24);
-        px[OFFSET_G(tmp_pixel)] = (uint8_t)(px_value >> 16);
-        px[OFFSET_B(tmp_pixel)] = (uint8_t)(px_value >> 8);
-        px[OFFSET_W(tmp_pixel)] = (uint8_t)px_value;
+        px[OFFSET_W(tmp_pixel)] = (uint8_t)(px_value >> 24);
+        px[OFFSET_R(tmp_pixel)] = (uint8_t)(px_value >> 16);
+        px[OFFSET_G(tmp_pixel)] = (uint8_t)(px_value >> 8);
+        px[OFFSET_B(tmp_pixel)] = (uint8_t)px_value;
 
         return 0;
     }
